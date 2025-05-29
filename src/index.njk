@@ -1,11 +1,19 @@
+---
+domain: biernacik.dev
+titlePrefix: biernacik.dev
+description: Website for miscellaneous stuff by Jan Biernacik.
+keywordsPrefix: biernacik.dev, biernacik.org, Jan Biernacik
+author: Jan Biernacik
+---
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>biernacik.dev</title>
+        <title>{{ titlePrefix }}</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="Website for miscellaneous stuff by Jan Biernacik.">
-        <meta name="keywords" content="biernacik.dev, biernacik.org, Jan Biernacik">
-        <meta name="author" content="Jan Biernacik">
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywordsPrefix }}">
+        <meta name="author" content="{{ author }}">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <script src="/assets/scripts/jquery.js"></script>
@@ -13,28 +21,27 @@
         <link rel="stylesheet" href="/assets/styles/fonts.css" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
         <link rel="stylesheet" href="/assets/styles/classes.css" />
-        <link rel="stylesheet" href="/assets/styles/ids.css" />
         <link rel="stylesheet" href="/assets/styles/media.css" />
 
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
         <link rel="shortcut icon" href="/assets/media/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="biernacik.dev" />
+        <meta name="apple-mobile-web-app-title" content="{{ titlePrefix }}" />
         <link rel="manifest" href="/assets/media/site.webmanifest" />
 
-        <link rel="alternate" hreflang="en" href="https://biernacik.dev/en" />
-        <link rel="alternate" hreflang="de" href="https://biernacik.dev/de" />
-        <link rel="alternate" hreflang="x-default" href="https://biernacik.dev/en" />
+        <link rel="alternate" hreflang="en" href="https://{{ domain }}/en/" />
+        <link rel="alternate" hreflang="de" href="https://{{ domain }}/de/" />
+        <link rel="alternate" hreflang="x-default" href="https://{{ domain }}/en/" />
         <meta name="robots" content="index, follow">
 
         <script type="module" src="/assets/scripts/turbo.js"></script>
-        <!-- 100% privacy-first analytics
-        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>-->
+        <!-- 100% privacy-first analytics -->
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     </head>
     <body>
         <main>
-            <h1>biernacik.dev</h1>
+            <h1>{{ titlePrefix }}</h1>
             <ul>
                 <li><a href="/de/">Deutsch</a></li>
                 <li><a href="/en/">English</a></li>

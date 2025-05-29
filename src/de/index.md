@@ -1,5 +1,5 @@
 ---
-layout: layouts/page_de.njk
+layout: layouts/pageDE.njk
 title: Startseite
 description: Dies ist die Startseite von biernacik.dev.
 keywords: Startseite

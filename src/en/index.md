@@ -1,5 +1,5 @@
 ---
-layout: layouts/page_en.njk
+layout: layouts/pageEN.njk
 title: Home Page
 description: This is the home page of biernacik.dev.
 keywords: Home Page
