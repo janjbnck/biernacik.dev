@@ -1,9 +1,21 @@
 :root {
     --color-background: #FFFFFF;
+    --color-background-alt: #F5F5F5;
+    --color-background-transparent: #FFFFFF80;
+    --color-background-alt-transparent: #F5F5F580;
     --color-text: #505050;
     --color-title: #121212;
-    --color-hightlight: #303030;
+    --color-highlight: #303030;
+    --color-border: #DDDDDD;
+    --blur-radius: 10px;
+    --radius-corner: 4px;
+    --spacing-x-small: 5px;
+    --spacing-small: 10px;
     --spacing-normal: 20px;
+    --spacing-large: 40px;
+    --spacing-larger: 60px;
+    --spacing-x-large: 80px;
+    --spacing-xx-large: 100px;
 }
 
 * {
@@ -21,8 +33,13 @@ body {
     background-color: var(--color-background);
 }
 
+main, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 main {
-    padding: var(--spacing-normal);
+    padding: var(--spacing-x-large) var(--spacing-normal) var(--spacing-normal) var(--spacing-normal);
 }
 
 footer {
@@ -42,6 +59,14 @@ h1, h2, h3, h4, h5, h6 {
 p, li, span {
     color: var(--color-text);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    margin: var(--spacing-normal) 0;
+}
+
+p, h4, h5, h6 {
+    margin: var(--spacing-small) 0;
 }
 
 a {

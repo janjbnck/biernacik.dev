@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #121212;
+        --color-background-alt: #252525;
+        --color-background-transparent: #12121280;
+        --color-background-alt-transparent: #25252580;
+        --color-text: #DDDDDD;
+        --color-title: #F5F5F5;
+        --color-highlight: #F5F5F5;
+        --color-border: #505050;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-items-center {
+        display: none;
+    }
+    #menu-button {
+        display: block;
+    }
+}

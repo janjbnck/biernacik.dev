@@ -44,6 +44,26 @@ sourceCodeUrl: https://github.com/janjbnck/biernacik.dev
         <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     </head>
     <body>
+        <header>
+            <nav id="navbar">
+                <div class="navbar-items navbar-items-left">
+                    <a id="menu-button" class="navbar-link" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
+                </div>
+                <div class="navbar-items navbar-items-center">
+                    <a href="/en" class="navbar-link">Home</a>
+                </div>
+                <div class="navbar-items navbar-items-right">
+                    <a href="/de{{ path }}" class="navbar-link"><i class="bi bi-globe"></i></a>
+                    <a href="https://github.com/janjbnck" class="navbar-link"><i class="bi bi-github"></i></a>
+                </div>
+            </nav>
+            <div id="menu">
+                <div onclick="toggleMenu();" id="menu-closer"></div>
+                <ul id="menu-items">
+                    <li><a href="/en" class="menu-link">Home</a></li>
+                </ul>
+            </div>
+        </header>
         <main>
             {{ content | safe }}
         </main>
